@@ -6,9 +6,13 @@ function fetchUser(){
 
 function displayUser(user){
    const userDisplay = document.querySelector('#user')
+   const randomColor = Math.floor(Math.random()*16777215).toString(16)
     if(user.gender ==='female')
-        document.body.style.backgroundColor = '#fe8ca0';
-        else document.body.style.backgroundColor = '#3b82f6';
+    document.body.style.backgroundColor = `#${randomColor}` 
+  else document.body.style.backgroundColor = `#${randomColor}`
+
+        // document.body.style.backgroundColor = '#fe8ca0';
+        // else document.body.style.backgroundColor = '#3b82f6';
     
         userDisplay.innerHTML = ` <div class="flex justify-between">
         <div class="flex">
